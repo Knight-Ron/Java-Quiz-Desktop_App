@@ -1,59 +1,89 @@
-# Java Quiz Application
+# 🧠 Java Quiz Desktop Application
 
-A desktop quiz application developed in Java using Swing. This project provides a timed, multiple-choice question-based quiz interface with features such as user login, hints, score tracking, and a result display.
+A simple yet engaging **multiple-choice quiz desktop application** built using **Java Swing**. It features a timed question system, user login, hints, score calculation, and a final result display — all packed in a clean GUI.
 
-## Features
+---
 
-- User login screen to enter unique ID
-- Rules screen with quiz instructions
-- Multiple-choice quiz with:
-  - 10 predefined questions
-  - 30-second timer per question
-  - Hint functionality to eliminate two incorrect options
-- Final score calculation based on correct answers
-- Result screen with score display and retry option
+## 🚀 Features
 
-## Project Structure
+* 🔐 User login with ID entry
+* 📋 Quiz rules screen
+* 📝 10 fixed MCQs with:
 
-QuizApp/
-├── Quiz_Images/ # UI images (CU_LOGO.jpg, score.png, etc.)
+  * ⏱ 30-second countdown timer per question
+  * 💡 One-time hint to eliminate 2 wrong options
+* 🧲 Real-time score tracking
+* 🏁 Final score screen with retry option
+
+---
+
+## 🗂️ Project Structure
+
+```
+Java-Quiz-Desktop_App/
+├── Quiz_Images/         # Image assets (CU_LOGO.jpg, score.png, etc.)
 ├── src/
-│ ├── Login.java # Login interface
-│ ├── Rules.java # Quiz rules screen
-│ ├── Quiz.java # Main quiz logic, timer, UI handling
-│ └── Score.java # Final score display and retry functionality
+│   ├── Login.java       # Login screen
+│   ├── Rules.java       # Instructions display
+│   ├── Quiz.java        # Core quiz logic + UI
+│   └── Score.java       # Result and retry interface
 └── README.md
+```
 
-## Prerequisites
+---
 
-- Java Development Kit (JDK 8 or higher)
-- IDE or text editor for Java development
-- Ensure all image resources are placed correctly in the `Quiz_Images/` folder
+## ✅ Prerequisites
 
-## How to Compile and Run
+* Java JDK 8 or higher
+* A Java IDE (e.g. IntelliJ IDEA, Eclipse) or terminal access
+* All images placed in the `Quiz_Images/` directory
 
-1. Clone or download the repository.
-2. Place the required images (`CU_LOGO.jpg`, `Uni_Temp.jpg`, `score.png`, etc.) inside the `Quiz_Images/` directory.
-3. Compile all `.java` files from the `src/` directory:
+---
+
+## 💻 How to Run
+
+1. **Clone or download** the repository.
+2. Ensure the following images are in `Quiz_Images/`:
+
+   * `CU_LOGO.jpg`
+   * `Uni_Temp.jpg`
+   * `score.png`
+3. Open terminal and compile:
+
    ```bash
    javac src/*.java
-4. Run the application starting from the Login screen:
+   ```
+4. Launch the app:
+
    ```bash
    java src.Login
+   ```
 
-## Customization
-1. Questions and Answers: Modify the arrays in Quiz.java to add or edit questions and answers.
-2. Timer: Change the default timer value by editing the timer variable in Quiz.java.
-3. Scoring logic: Adjust the score variable handling in the actionPerformed method of Quiz.java.
+---
 
-## Future Improvements
-1. Dynamic loading of questions from external files (e.g., JSON or CSV)
-2. User authentication and score history
-3. Improved UI layout with layout managers
-4. Support for multiple categories or difficulty levels
+## 🛠️ Customization
 
-## License
-This project is released under the MIT License.
+* **Questions & Answers**: Update the arrays in `Quiz.java`.
+* **Timer duration**: Modify the timer setting in `Quiz.java`.
+* **Scoring logic**: Tweak the `actionPerformed()` method for custom rules.
 
-## Author
-Developed by Ronald Jacob. This application was created as part of a practice project to demonstrate Java Swing capabilities and basic quiz logic implementation.
+---
+
+## 🌱 Future Enhancements
+
+* Load questions from external files (JSON/CSV)
+* Add user profiles and score history
+* Better UI using Layout Managers
+* Quiz categories or difficulty levels
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+Made by [**Ronald Jacob**](https://www.linkedin.com/in/ronald-jacob-20380a304/)
